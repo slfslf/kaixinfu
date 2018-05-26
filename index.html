@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>开心付网</title>
+<style type="text/css">
+	body{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	a{
+		list-style:none;
+		text-decoration: none;
+		color:#ff0000;
+	}
+	.header{
+		width:100%;
+		height:100px;
+		overflow:hidden;
+	}
+	.center{
+		width:1200px;
+		margin:auto;
+	}
+	ul{
+		list-style:none;
+		float:left;
+		margin-top:0px;
+		margin-left: 100px;
+	}
+	li{
+		font-size:24px;
+		color:#171717;
+		float:left;
+		padding-right:60px;
+		line-height:100px;
+	}
+	.logo{
+		float:left;
+		width:250px;
+		height:100px;
+	}
+	.header_right{
+		margin-left: 40px;
+		width:160px;
+		height:46px;
+		float:right;
+		border:2px solid #999999;
+		margin-top:25px;
+		font-size:24px;
+		text-align:center;
+		line-height:46px;
+		color:#999999;
+	}
+	.header span{
+		color:red;
+	}
+	p{
+		padding-top:50px;
+		text-align: center;
+		font-size:36px;
+		color:#171717;
+	}
+	.tu_f{
+		margin-top:50px;
+		margin-left:100px;
+	}
+	.zi_f{
+		width:400px;
+		height:250px;
+		font-size:20px;
+		text-align:center;
+		float:right;
+		margin-right:100px;
+		margin-top:150px;
+	}
+	.kuai_f{
+		width:140px;
+		height:50px;
+		border:2px solid #666666;
+		float:right;
+		margin-top:-100px;
+		margin-right: 240px;
+		color:#666666;
+		font-size:24px;
+		text-align:center;
+		line-height:50px;
+	}
+	.content_second{
+		width:100%;
+		height:600px;
+		background-color:#f1f1f1;
+		margin-top:30px;
+	}
+	.wufu_f{
+		width:285px;
+		height:390px;
+		background-color:#ffffff;
+		margin-top:0px;
+		border-radius:10px;
+		float:left;
+	}
+	.wufu_h{
+		width:285px;
+		height:56px;
+		background-color:#e59b1a;
+		border-radius:10px;
+		font-size:24px;
+		color:#ffffff;
+		text-align:center;
+		line-height:56px;
+	}
+	.wenzi_f{
+		font-size:24px;
+		color:#dd7018;
+		margin-left:10px;
+		margin-top:20px;
+	}
+	.xian{
+		width:60px;
+		height:2px;
+		background-color:#e59b1a;
+		margin-left:10px;
+		margin-top:20px;
+	}
+	.wenzi_s{
+		width:270px;
+		font-size:18px;
+		margin-left:10px;
+		margin-top:20px;
+		color:#666666;
+	}
+	.wufu_s{
+		width:285px;
+		height:390px;
+		background-color:#ffffff;
+		margin-top:0px;
+		border-radius:10px;
+		margin-left:20px;
+		float:left;
+	}
+	.kuai_s{
+		width:190px;
+		height:60px;
+		background-color:#ff321d;
+		border-radius:50px;
+		font-size:24px;
+		color:#FFFFFF;
+		text-align:center;
+		line-height:60px;
+		margin-left:500px;
+		margin-top:50px;
+	}
+	.content_f{
+		width:100%;
+		height:520px;
+		background-color:#f1f1f1;
+		margin-top:30px;
+	}
+	.xinwen_f{
+		width:500px;
+		height:170px;
+		border-radius:20px;
+		background-color:#ffffff;
+		float:left;
+		margin-left:40px;
+	}
+	.xinwen_t{
+		margin-top:20px;
+		margin-left:30px;
+		float:left;
+	}
+	.ziti_f{
+		margin-left:180px;
+		font-size:24px;
+		color:#333333;
+		padding-top:22px;
+	}
+	.ziti_s{
+		width:300px;
+		margin-left:180px;
+		font-size:20px;
+		color:#666666;
+		padding-top:20px;
+	}
+	.xinwen_s{
+		width:500px;
+		height:170px;
+		border-radius:20px;
+		background-color:#ffffff;
+		margin-left:650px;
+	}
+	.shijian{
+		margin-left:370px;
+		font-size:20px;
+		color:#666666;
+		margin-top:10px;
+	}
+	.footer{
+		width:100%;
+		height:350px;
+		background-color:#333333;
+	}
+	.foot_f{
+		font-size:20px;
+		color:#ffffff;
+		padding-top:50px;
+		padding-left:20px;
+		float:left;
+	}
+	.foot_f span{
+		font-size:24px;
+	}
+	.foot_s{
+		font-size:20px;
+		color:#ffffff;
+		padding-top:50px;
+		padding-left:80px;
+		float:left;
+	}
+	.foot_s span{
+		font-size:24px;
+	}
+	.xian_f{
+		width:770px;
+		height:2px;
+		border-bottom:2px solid #999999;
+		padding-top:230px;
+		margin-left:20px;
+	}
+	.foot_zi{
+		color:#ffffff;
+		font-size:18px;
+		margin-top:20px;
+		margin-left:20px;
+	}
+</style>
+</head>
+
+<body>
+<div class="header">
+	<div class="center">
+		<div class="logo"><img src="images/logo.png" class="logo"></div>
+		<ul>
+			<a href="#"><li>首页</li></a>
+			<a href="index_shangjia.html"><li>商家入驻</li></a>
+			<a href="index_fuwuxiangmu.html"><li>服务项目</li></a>
+			<a href="index_lianxi.html"><li>联系我们</li></a>
+			<div class="header_right"><span><a href="denglu.html">登录</a></span> | <span><a href="zhuce.html">注册</a></span></div>
+		</ul>
+	</div>
+</div>
+<img src="images/banner5.jpg">
+	
+<div class="content">
+	<div class="center">
+		<div class="content_first">
+			<p>公司优势</br>Company Advantage</p>
+			<img src="images/tu_f.png" class="tu_f">
+			<div class="zi_f">本公司主要专注于模板建设，始终秉承“让互联网商业无处不在”的理念，以专业的配套服务、领先的技术实力、完善的产品布局和丰富的实践经验，推动实体商业和互联网商业的深度融合，是“互联网+”时代商业发展的重要力量。致力于为企业提供立体化的服务和技术，从前端到后端，从直销到分销，从PC到移动，从线上到线下，帮助各种类型（大中小微）的企业纵向打通资源、横向整合业务。</div>
+			<div class="kuai_f">了解更多</div>
+		</div>
+	</div>
+	
+	<div class="content_second">
+		<div class="center">
+			<p>服务项目</br>Service lines</p>
+			<div class="wufu_f">
+				<div class="wufu_h">移动/社交/微商</div>
+				<div class="wenzi_f">线上线下结合</div>
+				<div class="xian"></div>
+				<div class="wenzi_s">将线下和线上移动社交结合，实现用户统一营销，商品统一管理核销，以确保流量稳定和老用户维护。</div>
+			</div>
+			<div class="wufu_s">
+				<div class="wufu_h">网站建设</div>
+				<div class="wenzi_f">网站模板建设</div>
+				<div class="xian"></div>
+				<div class="wenzi_s">优秀的技术团队，一对一沟通，根据您的需求帮您完成您心目中想要的，适合的。</div>
+			</div>
+			<div class="wufu_s">
+				<div class="wufu_h">自建零售平台</div>
+				<div class="wenzi_f">自建零售平台</div>
+				<div class="xian"></div>
+				<div class="wenzi_s">以开源系统作为支持，企业可以全自主自定义搭建PC商城，H5商城，原生APP商城，打造专属的在线及终端零售店铺，并在同意后台进行管理。</div>
+			</div>
+			<div class="wufu_s">
+				<div class="wufu_h">APP</div>
+				<div class="wenzi_f">APP开发建设</div>
+				<div class="xian"></div>
+				<div class="wenzi_s">优秀的技术团队，一对一沟通，根据您的需求帮您完成您心目中想要的，适合的。根据对公司需要的要求建设APP。</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content_t">
+		<div class="center">
+			<p>商家入驻</br>Business entry</p>
+			<img src="images/tu_s.png">
+			<div class="kuai_s">立即申请</div>
+		</div>
+	</div>
+
+	<div class="content_f">
+		<div class="center">
+			<p>热点资讯</br>Hot news</p>
+			<div class="xinwen_f">
+				<img src="images/tu_t.png" class="xinwen_t">
+				<div class="ziti_f">微信商城模板</div>
+				<div class="ziti_s">电商模板，APP，购物商城，模板展示</div>
+				<div class="shijian">2018-04-11</div>
+			</div>
+			<div class="xinwen_s">
+				<img src="images/tu_t.png" class="xinwen_t">
+				<div class="ziti_f">推荐购买可享优惠</div>
+				<div class="ziti_s">推荐一人购买模板可享半折优惠，推荐两人购买，可免费使用模板哦</div>
+				<div class="shijian">2018-04-13</div>
+			</div>
+			<div class="kuai_s">了解更多</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="center">
+		<div class="foot_f">
+			<span>关于我们</span></br></br>关于我们</br>常见问题</br>加入我们
+		</div>
+		<div class="foot_s">
+			<span>商家入驻</span></br></br>商家入驻</br>平台公告</br>入驻标准
+		</div>
+		<div class="foot_s">
+			<span>联系我们</span></br></br>地址：上海市虹口区元和投资大厦1202号</br>电话：021-65932391</br>邮箱：qian@kxfnet.com
+		</div>
+		<div class="xian_f"></div>
+		<div class="foot_zi">Copyright©2014-2018 开心付（上海）网络科技有限公司 沪ICP备17051443号-1</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
